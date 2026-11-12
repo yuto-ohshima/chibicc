@@ -1,0 +1,14 @@
+{
+  "version": "0.2.0",
+  "configurations": [
+    {
+      "type": "lldb",
+      "request": "launch",
+      "name": "Debug chibicc",
+      "program": "${workspaceFolder}/chibicc",
+      "args": ["-o", "tmp.s", "test.c"],
+      "cwd": "${workspaceFolder}",
+      "preLaunchTask": "make"
+    }
+  ]
+}
