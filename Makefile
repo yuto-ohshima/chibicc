@@ -1,6 +1,5 @@
 CFLAGS=-std=c11 -g -static
 
-# x86-64 Linux 環境 (Apple Silicon でも Rosetta/QEMU 経由で動く)
 DOCKER_IMAGE=compilerbook
 DOCKER_RUN=docker run --rm --platform linux/amd64 -v "$(CURDIR)":/work -w /work
 
